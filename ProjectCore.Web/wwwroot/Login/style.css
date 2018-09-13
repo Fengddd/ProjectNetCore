@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  display: block;
+  margin: 0;
+}
+
+body {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.flex_container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form {
+  margin: auto;
+}
+
+.input_wrap {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+.input_wrap .after {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.input_wrap span {
+  display: none;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 50%;
+  -webkit-transition: margin .8s;
+  transition: margin .8s;
+  opacity: .8;
+  margin: 0;
+  left: 50%;
+  font-weight: 100;
+}
+.input_wrap span.in {
+  margin-bottom: 20px;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  height: 60px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  font: 25px Helvetica;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-align: center;
+  letter-spacing: 3px;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+input:focus::placeholder {
+  opacity: 0;
+}
+input:focus + .after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+input::-webkit-input-placeholder {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  font-weight: 900;
+}
+input::-moz-placeholder {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  font-weight: 900;
+}
+input:-ms-input-placeholder {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  font-weight: 900;
+}
+input::placeholder {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  font-weight: 900;
+}
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+input.error {
+  border-color: #ea1d1d;
+}

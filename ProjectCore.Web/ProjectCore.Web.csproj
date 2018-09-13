@@ -1,0 +1,178 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-{Project Name}-{GUID}</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\UploadFile\**" />
+    <Content Remove="wwwroot\UploadFile\**" />
+    <EmbeddedResource Remove="wwwroot\UploadFile\**" />
+    <None Remove="wwwroot\UploadFile\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Configuration" Version="4.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.2" />
+    <PackageReference Include="FluentValidation" Version="7.6.104" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.6.104" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Redis" Version="0.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis.Core" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\bootstrap-fileinput-master\.github\CODE_OF_CONDUCT.md" />
+    <None Include="wwwroot\bootstrap-fileinput-master\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\bootstrap-fileinput-master\.github\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\bootstrap-fileinput-master\.github\PULL_REQUEST_TEMPLATE.md" />
+    <None Include="wwwroot\DeskPage\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\DeskPage\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\DeskPage\img\Thumbs.db" />
+    <None Include="wwwroot\DeskPage\i\examples\Thumbs.db" />
+    <None Include="wwwroot\DeskPage\i\Thumbs.db" />
+    <None Include="wwwroot\DeskPage\js\amazeui.ie8polyfill.js" />
+    <None Include="wwwroot\DeskPage\js\amazeui.ie8polyfill.min.js" />
+    <None Include="wwwroot\DeskPage\js\amazeui.js" />
+    <None Include="wwwroot\DeskPage\js\amazeui.min.js" />
+    <None Include="wwwroot\DeskPage\js\amazeui.widgets.helper.js" />
+    <None Include="wwwroot\DeskPage\js\amazeui.widgets.helper.min.js" />
+    <None Include="wwwroot\DeskPage\js\app.js" />
+    <None Include="wwwroot\DeskPage\js\handlebars.min.js" />
+    <None Include="wwwroot\DeskPage\js\jquery.min.js" />
+    <None Include="wwwroot\DeskPage\js\scroll.js" />
+    <None Include="wwwroot\FwbEdit\fontawesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\FwbEdit\js\jquery-1.10.2.min.js" />
+    <None Include="wwwroot\FwbEdit\js\wangEditor-1.1.0-min.js" />
+    <None Include="wwwroot\FwbEdit\js\wangEditor-1.1.0.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\easyloader.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\jquery.easyui.min.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\jquery.easyui.mobile.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\jquery.min.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-af.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-am.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-ar.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-bg.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-ca.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-cs.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-cz.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-da.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-de.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-el.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-en.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-es.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-fr.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-it.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-jp.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-ko.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-nl.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-pl.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-pt_BR.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-ru.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-sv_SE.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-tr.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-zh_CN.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\locale\easyui-lang-zh_TW.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.accordion.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.calendar.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.combo.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.combobox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.combogrid.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.combotree.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.combotreegrid.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.datagrid.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.datalist.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.datebox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.datetimebox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.datetimespinner.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.dialog.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.draggable.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.droppable.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.filebox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.form.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.layout.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.linkbutton.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.menu.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.menubutton.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.messager.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.mobile.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.numberbox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.numberspinner.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.pagination.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.panel.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.parser.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.passwordbox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.progressbar.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.propertygrid.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.resizable.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.searchbox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.slider.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.spinner.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.splitbutton.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.switchbutton.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.tabs.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.tagbox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.textbox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.timespinner.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.tooltip.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.tree.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.treegrid.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.validatebox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\plugins\jquery.window.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\easyloader.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.accordion.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.calendar.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.combobox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.datebox.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.draggable.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.droppable.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.form.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.linkbutton.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.menu.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.parser.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.progressbar.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.propertygrid.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.resizable.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.slider.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.tabs.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\src\jquery.window.js" />
+    <None Include="wwwroot\jquery-easyui-1.5.3\themes\material\images\Thumbs.db" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\Paging\js\jquery.min.js" />
+    <None Include="wwwroot\Paging\js\paging.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TCSCD.Unity">
+      <HintPath>..\TCSCD.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Domain.Repository.Interfaces\ProjectCore.Domain.Repository.Interfaces.csproj" />
+    <ProjectReference Include="..\Project.Infrastructure.Repository\ProjectCore.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\ProjectCore.Common\ProjectCore.Common.csproj" />
+    <ProjectReference Include="..\ProjectCore.EntityFrameworkCore\ProjectCore.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

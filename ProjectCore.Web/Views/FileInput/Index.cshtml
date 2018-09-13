@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutFrame.cshtml";
+
+}
+<link href="~/UpFile/bootstrap.min.css" rel="stylesheet" />
+<link href="~/UpFile/fileinput.min.css" rel="stylesheet" />
+<link href="~/UpFile/easyui.css" rel="stylesheet" />
+<link href="~/UpFile/icon.css" rel="stylesheet" />
+<link href="~/UpFile/base.css" rel="stylesheet" />
+<script src="~/UpFile/fileinput.js"></script>
+<script src="~/UpFile/jquery.easyui.min.js"></script>
+<script src="~/UpFile/zh.js"></script>
+<script src="~/UpFile/easyuihelper.js"></script>
+<script src="~/UpFile/bootstrap.js"></script>
+<script src="~/UpFile/BasicControl.js"></script>
+<script src="~/UpFile/easyui-lang-zh_CN.js"></script>
+
+
+
+
+@*<form>
+
+            <input id="files" name="files" type="file" class="file" multiple>
+
+            <input type="button" id="Btn" value="提交" />
+    </form>*@
+
+<input type="file" id="FileInput" />
+<br />
+<input type="button" id="up" value="测试上传文件" />
+
+<script>
+
+    $(function () {
+
+        var FileData = new Array();
+
+        //显示插件
+        $("#FileInput").FileSelector({
+            showBrowse: true, deleteUrl: "",
+            allowedFileExtensions: ['pdf', 'docx', 'xlsx', 'gcfx', 'gcf', 'ysd', 'dwg', 'jpg', 'png'],
+            uploadExtraData: { folderName: 'File', ColumnName: "File" },
+            maxFileCount: 1000,
+            fileuploaded: function (param) {
+                //隐藏取消 和选择按钮
+                $(".fileinput-cancel-button").click();
+                $(".btn-primary").hide();
+                alert(param.File_Name);
+                FileData.push(param);
+               
+
+            }
+        });
+        //保存
+        $("#up").click(function () {
+
+            var fileUpload = $("#FileInput").get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                alert(files[i].name);
+                data.append(files[i].name, files[i]);
+
+            }
+            $.ajax({
+                url: "/FileInput/UploadFiles",
+                contentType: false,
+                processData: false,
+                data: data,
+                type: "post",
+                success: function (data) {
+                    alert(data);
+                }
+            });
+
+
+        });
+
+
+
+
+    });
+</script>
+
+
+
+@*<script>
+        initFileInput("files");
+        //初始化fileinput控件（第一次初始化）
+        function initFileInput(ctrlName) {
+            var control = $('#' + ctrlName);
+            control.fileinput({
+                language: 'zh', //设置语言
+                allowedFileExtensions: ['jpg', 'png', 'gif'],//接收的文件后缀
+                showUpload: false, //是否显示上传按钮
+                showCaption: false,//是否显示标题
+                browseClass: "btn btn-primary", //按钮样式
+                previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+
+            });
+        }
+
+        $("#Btn").click(function () {
+
+            var fileUpload = $("#files").get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                alert(files[i].name);
+                data.append(files[i].name, files[i]);
+
+            }
+            $.ajax({
+                url: "/FileInput/UploadFiles",
+                contentType: false,
+                processData: false,
+                data: data,
+                type: "post",
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        });
+
+    </script>*@
+

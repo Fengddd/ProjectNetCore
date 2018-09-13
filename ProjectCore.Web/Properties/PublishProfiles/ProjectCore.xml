@@ -1,0 +1,24 @@
+﻿<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <WebPublishMethod>MSDeploy</WebPublishMethod>
+    <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <SiteUrlToLaunchAfterPublish>http://www.MyNETCore.com/FirstNetCore/</SiteUrlToLaunchAfterPublish>
+    <LaunchSiteAfterPublish>True</LaunchSiteAfterPublish>
+    <ExcludeApp_Data>False</ExcludeApp_Data>
+    <PublishFramework>netcoreapp1.1</PublishFramework>
+    <UsePowerShell>True</UsePowerShell>
+    <EnableMSDeployAppOffline>True</EnableMSDeployAppOffline>
+    <MSDeployServiceURL></MSDeployServiceURL>
+    <DeployIisAppPath>NetCore/FirstNetCore</DeployIisAppPath>
+    <RemoteSitePhysicalPath />
+    <SkipExtraFilesOnServer>True</SkipExtraFilesOnServer>
+    <MSDeployPublishMethod>InProc</MSDeployPublishMethod>
+    <EnableMSDeployBackup>False</EnableMSDeployBackup>
+    <UserName>username</UserName>
+    <_SavePWD>True</_SavePWD>
+    <ADUsesOwinOrOpenIdConnect>False</ADUsesOwinOrOpenIdConnect>
+    <AuthType>NTLM</AuthType>
+    <ProjectGuid>a03b5ea4-f1d5-4626-8403-c3e1ce66918d</ProjectGuid>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,351 @@
+﻿body {
+    background-color: #dedede;
+    font-family: "微软雅黑";
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.f-header {
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 2px solid #1276cb;
+}
+
+    .f-header .logo {
+        background: url("/Content/images/logo.jpg") no-repeat -20px 0;
+        display: block;
+        float: left;
+        height: 76px;
+        margin-top: 12px;
+        text-indent: -99em;
+        width: 148px;
+    }
+
+    .f-header .text {
+        border-left: 1px solid #ddd;
+        display: block;
+        float: left;
+        margin-top: 37px;
+        padding-left: 25px;
+    }
+
+        .f-header .text .name {
+            color: #666;
+            display: inline-block;
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+    .f-header .userNameBox {
+        float: right;
+        margin-top: 70px;
+        color: #ccc;
+    }
+
+    .f-header .userNameBox .userName i {
+            color: #ccc;
+        }
+
+.f-main {
+    background-color: #fff;
+    width: 1000px;
+    margin: 20px auto 0;
+    border-top: 1px solid #50a569;
+}
+
+.item-box {
+    border-top: 10px solid #f5f5f5;
+    padding-top: 5px;
+}
+
+    .item-box .item-hd {
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 2px solid #f18008;
+        margin: 0 15px;
+    }
+
+        .item-box .item-hd span {
+            border-bottom: 5px solid #1276cb;
+            color: #222222;
+            display: block;
+            font-size: 16px;
+            line-height: 30px;
+            width: 130px;
+        }
+
+    .item-box .item-bd {
+        padding: 10px 15px;
+    }
+
+        .item-box .item-bd .form-list {
+            width: 100%;
+            border:1px solid #ddd;
+        }
+
+            .item-box .item-bd .form-list table {
+                border-collapse: collapse;
+            }
+
+            .item-box .item-bd .form-list th {
+                border: 1px dotted #ddd;
+                color: #888;
+                font-size: 12px;
+                font-weight: 400;
+                padding: 8px 5px;
+                vertical-align: middle;
+                min-width: 80px;
+            }
+            .item-box .item-bd .list-histoy th,
+            .item-box .item-bd .list-histoy td {
+                width: auto;
+                padding: 8px 5px;
+                vertical-align: middle;
+            }
+            .item-box .item-bd .form-list td {
+                font-size: 12px;
+                padding:8px 5px;
+                color:#222;
+                min-width:100px;
+                border:1px dotted #ddd;
+                vertical-align: middle;
+            }
+                .item-box .item-bd .form-list td .form-control {
+                    font-size: 12px;
+                    height: 28px;
+                    padding: 0 10px;
+                    width: 90%;
+                }
+
+                .item-box .item-bd .form-list td textarea.form-control {
+                    font-size: 12px;
+                    height: auto;
+                    padding:5px;
+                    width: 90%;
+                }
+
+                .item-box .item-bd .form-list td .disabled {
+                    border: 0px;
+                    background: rgba(255, 255, 255, 0) !important;
+                }
+
+        .item-box .item-bd .table-list {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .item-box .item-bd .table-list th {
+                background-color: #f6f6f6;
+            }
+
+            .item-box .item-bd .table-list td .i-btn-user {
+                background-color: #f6f6f6;
+                height: 35px;
+                padding-top: 9px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                top: 0;
+                width: 35px;
+                color: #1276cb;
+                cursor: pointer;
+            }
+
+                .item-box .item-bd .table-list td .i-btn-user:hover {
+                    color: #e67136;
+                    background-color: #fafafa;
+                }
+
+textarea.form-control {
+    resize: none;
+    height: 180px;
+}
+
+.btn-cancel {
+    background-color: #C5C5C5;
+    border: 1px solid #C5C5C5;
+    color: #fff;
+     
+}
+
+    .btn-cancel:hover, .btn-cancel:focus {
+        background-color: #666;
+        border: 1px solid #666;
+        color: #fff;
+    }
+
+.btn-enter {
+    background-color: #2a9fe6;
+    border: 1px solid #2a9fe6;
+    color: #fff;
+     
+}
+
+    .btn-enter:hover, .btn-enter:focus {
+        background-color: #2a9fe6;
+        border: 1px solid #2a9fe6;
+        color: #fff;
+    }
+
+
+
+/*******左侧悬浮按钮********/
+ul.nav-tabs {
+    top: 35%;
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+
+    ul.nav-tabs li {
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+
+        ul.nav-tabs li:first-child {
+            border-top: none;
+        }
+
+        ul.nav-tabs li a {
+            margin: 0;
+            padding: 8px 16px;
+            background-color: #fff;
+            border-radius: 0;
+            outline:0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover,ul.nav-tabs li a:hover,.nav > li > a:hover, .nav > li > a:focus {
+            color: #fff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+            cursor: pointer;
+        }
+
+        ul.nav-tabs li:first-child a {
+            border-radius: 4px 4px 0 0;
+        }
+
+        ul.nav-tabs li:last-child a {
+            border-radius: 0 0 4px 4px;
+        }
+
+    ul.nav-tabs.affix {
+        top: 30px; /* Set the top position of pinned element */
+    }
+/*********左侧悬浮按钮完*******/
+/*********右侧悬浮定位按钮*************/
+#gotoup{
+    position:fixed;
+    right:1%;
+    bottom:2%;
+    width:40px;
+    border:1px solid #eee;
+    background-color:#ffffff;
+    z-index:1040;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    text-align:center;
+    padding-top:10px;
+    border-radius:5px;
+}
+
+/*********右侧悬浮定位按钮完*************/
+.accordion {
+    border:none;
+}
+.accordion .panel{
+   margin-bottom:10px;
+}
+.accordion .panel{
+   box-shadow:0 0 3px #ccc;
+}
+.panel-tool a{
+    background-color:#F2F2F2;
+    border-radius:3px;
+}
+.accordion .accordion-body{
+   border-width: 0 1px 1px
+}
+/*.accordion .accordion-header-selected {
+    background-color: #94c8e2;
+}*/
+.show-box {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 13px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.21);
+    float: left;
+    height: 80px;
+    margin: 15px;
+    width: 200px;
+}
+.show-box .title {
+    border-bottom: 1px dotted #d7d7d7;
+    color: #999;
+    margin-bottom: 10px;
+    padding:5px 10px;
+    font-weight:700;
+    text-align:center;
+}
+.show-box .cont {
+    padding:5px 10px;
+    text-align:center;
+}
+.show-box .file-preview {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 0
+}
+.show-box .file-preview-frame {
+    border: medium none;
+    box-shadow: none;
+    line-height: 22px;
+    margin: 0 0 2px;
+    text-indent: 4px;
+}
+.file-footer-buttons {
+    margin-right: 2px;
+}
+
+.bg-1{
+    background-color:#f5f5f5;
+}
+.bg-2{
+    background-color:#fffbdf;
+}
+.bg-3{
+    background-color:#dfffe5;
+}
+.bg-4{
+    background-color:#ecf1fc;
+}
+.btn-default {
+    background-color: #ff9b00;
+    border-color: #ff9b00;
+    color: #fff;
+}
+.btn-default:hover {
+    background-color: #f18008;
+    border-color: #f18008;
+    color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(n) {
+    background-color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(2n) {
+    background-color: #f9f9f9;
+}
+.table-striped > tfoot > tr:nth-of-type(2n+1) {
+    background-color: #f9f9f9;
+}
+.accordion .item-box {
+    border-top:none;
+}
+.accordion .item-box .item-bd{
+    padding:5px 10px;
+}

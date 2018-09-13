@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+<script src="~/FrameStyle/TemplateStyle/js/jquery/jQuery-2.2.0.min.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+领域驱动模型测试
+    <div>
+        <input type="button" id="btn" value=" 添加购物车测试" style="background-color: aqua" />
+        <br />
+        <input type="button" id="Delbtn" value=" 移除购物车测试" style="background-color: aqua" />
+        <br />
+        <input type="button" id="orderBtn" value=" 创建订单" style="background-color: aqua" />
+        <br/>
+        <input type="button" id="RemoveOrderBtn" value=" 移除订单"  style="background-color: aqua"/>
+    </div>
+</body>
+</html>
+<script>
+    $("#btn").click(function() {
+
+        $.post("/ShoppingCart/AddShoppingCart", function(data) {
+
+            alert(data);
+        });
+    });
+
+    $("#Delbtn").click(function() {
+
+        $.post("/ShoppingCart/DelShoppingCart", function(data) {
+
+            alert(data);
+        });
+    });
+
+    $("#orderBtn").click(function() {
+
+        $.post("/ShoppingCart/CreateOrder", function(data) {
+
+            alert(data);
+        });
+    });
+
+    $("#RemoveOrderBtn").click(function() {
+
+        $.post("/ShoppingCart/RemoveOrder", function(data) {
+
+            alert(data);
+        });
+    });
+</script>

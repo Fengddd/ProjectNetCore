@@ -1,0 +1,10 @@
+﻿{
+  "modules": [
+    {
+      "type": "ProjectCore.Repository.EF.RepositoryModule, ProjectCore.Repository.EF"
+    },
+    {
+      "type": "ProjectCore.Service.ServiceModel, ProjectCore.Service"
+    }
+  ]
+}

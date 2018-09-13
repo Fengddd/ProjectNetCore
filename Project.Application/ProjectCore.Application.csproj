@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <None Remove="Dtos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Domain.Model\ProjectCore.Domain.Model.csproj" />
+    <ProjectReference Include="..\Project.Domain.Repository.Interfaces\ProjectCore.Domain.Repository.Interfaces.csproj" />
+    <ProjectReference Include="..\ProjectCore.Common\ProjectCore.Common.csproj" />
+    <ProjectReference Include="..\ProjectCore.Domain.DomainService\ProjectCore.Domain.DomainService.csproj" />
+  </ItemGroup>
+
+</Project>
